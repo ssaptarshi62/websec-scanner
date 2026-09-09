@@ -10,7 +10,7 @@ def main():
     url = input("Enter the website URL (include http:// or https://): ")
 
     while True:
-        print("\nChoose a check to run:")
+        print("\nChoose a check to run:=>")
         print("1. Header Check")
         print("2. TLS/SSL Check")
         print("3. Exposed File Check")
