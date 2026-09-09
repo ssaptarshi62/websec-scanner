@@ -21,4 +21,3 @@ def check_headers(url):
         else:
             print(f"not ok, {header} is not present ")
 
-check_headers("http://testfire.net/")
