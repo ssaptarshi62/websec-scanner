@@ -1,4 +1,5 @@
 from modules.header_check import check_headers
+from modules.port_scanner import check_openports
 
 
 def run_all_checks(url):
@@ -14,6 +15,7 @@ def main():
         print("1. Header Check")
         print("2. TLS/SSL Check")
         print("3. Exposed File Check")
+        print("4. Open ports check")
         print("4. Dependency Vulnerability Scan")
         print("5. Run All Checks (Full Report)")
         print("6. Exit")
@@ -22,6 +24,9 @@ def main():
 
         if choice == "1":
             check_headers(url)
+
+        if choice == "2":
+            check_openports(url)
 
         elif choice == "6":
             print("Goodbye!")
