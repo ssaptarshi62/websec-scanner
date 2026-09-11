@@ -4,9 +4,11 @@ def check_headers(url):
 
     important_headers = [
         "Strict-Transport-Security",
-        "X-Frame-Options",
-        "X-Content-Type-Options",
-        "Content-Security-Policy"
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Referrer-Policy",
+            "Permissions-Policy"
     ]
 
 
@@ -17,7 +19,7 @@ def check_headers(url):
 
     for header in important_headers:
         if header in headers:
-            print(f"ok , {header} is present ")
+            print(f"[+] , {header} is present ")
         else:
-            print(f"not ok, {header} is not present ")
+            print(f"[-], {header} is not present ")
 
