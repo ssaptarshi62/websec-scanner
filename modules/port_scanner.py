@@ -7,7 +7,7 @@ def check_openports(url):
     target = url.replace("https://", "").replace("http://", "").split("/")[0]
 
     print("\n================================")
-    print("       Top 1000 ports san")
+    print("       Top 1000 ports scan")
     print("================================")
 
     print(f"\n[!] Target: {target}")
