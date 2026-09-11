@@ -8,7 +8,7 @@ def check_openports(url):
 
     print("\n================================")
     print("       Top 1000 ports scan")
-    print("================================")
+    print("==================================")
 
     print(f"\n[!] Target: {target}")
     print("[*] Scanning top 1000 common ports...")
