@@ -2,7 +2,7 @@ from modules.header_check import check_headers
 from modules.port_scanner import check_openports
 from modules.tls_check import check_tls
 from modules.exposed_files import check_exposed_files
-from modules.all_checks import run_all_checks
+
 
 def run_all_checks(url):
     check_headers(url)
